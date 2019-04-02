@@ -1,0 +1,309 @@
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+.vertical-tab{
+    font-family: 'Ubuntu', sans-serif;
+    display: table;
+}
+.vertical-tab .nav-tabs{
+   display: table-cell;
+   width: 28%;
+   min-width: 28%;
+   border: none;
+   position: relative;
+}
+.vertical-tab .nav-tabs li{
+   float: none;
+   vertical-align: top;
+}
+.vertical-tab .nav-tabs li a{
+    color: #303030;
+    background-color: #e7e7e7;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 12px;
+    margin: 0;
+    border-radius: 0;
+    border: none;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:hover,
+.vertical-tab .nav-tabs li.active a,
+.vertical-tab .nav-tabs li.active a:hover{
+    color: #fff;
+    background-color: transparent;
+    border:none;
+}
+.vertical-tab .nav-tabs li a:before,
+.vertical-tab .nav-tabs li a:after{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: #e82e6f;
+    position: absolute;
+    left: -100%;
+    top: 0;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+}
+.vertical-tab .nav-tabs li a:after{
+    background-color: #303030;
+    width: 5px;
+    transform: scaleY(0);
+    left: 0;
+    transition: all 0.3s ease 0.1s;
+}
+.vertical-tab .nav-tabs li.active a:before,
+.vertical-tab .nav-tabs li a:hover:before{
+    left: 10px;
+}
+.vertical-tab .nav-tabs li.active a:after,
+.vertical-tab .nav-tabs li a:hover:after{
+    transform: scale(1);
+}
+.vertical-tab .tab-content{
+    color: #fff;
+    background: #303030;
+    font-size: 15px;
+    text-align: justify;
+    line-height: 23px;
+    vertical-align: top;
+    padding: 15px 18px 0;
+    display: table-cell;
+}
+.vertical-tab .tab-content h3{
+    font-size: 24px;
+    margin: 0 0 5px 0;
+}
+@media only screen and (max-width: 479px){
+    .vertical-tab .nav-tabs{
+        display: block;
+        width: 100%;
+        border-right: none;
+    }
+    .vertical-tab .nav-tabs li a{
+        padding: 10px;
+        margin: 0 0 10px;
+    }
+    .vertical-tab .tab-content{
+        display: block;
+        padding: 20px 15px 5px;
+        border-radius: 0 0 10px 10px;
+    }
+    .vertical-tab .tab-content h3{ font-size: 18px; }
+}
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 100%;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size:1.65vw;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+.imgtab{
+  position: relative;
+  display: inline-block;
+  max-width: 90%;
+  padding: 0;
+
+}
+
+.imgtab-familia{
+  position: relative;
+  display: inline-block;
+  max-width: 60%;
+  padding: 0;
+}
+
+.imgtab-pre-escolar{
+  position: relative;
+  display: inline-block;
+  padding: 0
+}
+
+#img-control{
+    max-width: 350px;
+    margin-right: 30px;
+
+}
+/* Style the tab content */
+#conteudo{
+
+
+}
+
+#familia{
+    display:block;
+}
+
+#intervencao{
+    display:block;
+}
+
+#pre_escolar{
+    display:block;
+}
+
+#escolar{
+    display:block;
+}
+
+#jovens{
+    display:block;
+}
+
+#adultos{
+    display:block;
+}
+
+#lazer{
+    display:block;
+}
+
+#continuada{
+    display:block;
+}
+.tabcontent {
+    text-align: left;
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+	font-size: 1.15vw;
+}
+
+.lista{
+
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+.customtab {
+  border: none !important;
+}
+
+.centralizado {
+    width:1080px;
+    align-content: center;
+    margin-top: 1%;
+
+}
+
+.name-title{
+  font-size: 1.7rem;
+}
+
+.botao{
+
+  margin-top: 2%;
+}
+
+.premioshead{
+  margin-top: 13%;
+}
+
+.premioshead h3{
+  font-size: 3rem;
+}
+
+.cabecalhoPremios{
+
+  margin-bottom: 8%;
+
+}
+
+.imagempremios{
+  height: auto ;
+  width: 110% ;
+}
+
+.funcionarios li, .trabalhos li, .premios li, .titulos li{
+  list-style-type: none;
+}
+.funcionarios li:hover, .funcionarios div:hover, .trabalhos li:hover, .premios li:hover, .titulos li:hover{
+  background-color: #f05f40;
+  color: #fff;
+}
+.sobre{
+  margin-top: 1%;
+}
+
+.sobre h3{
+  font-size: 2rem;
+}
+
+.sobre p{
+  font-size: 1.5rem;
+}
+
+.premios{
+
+  text-align: right;
+}
+
+.cartao{
+  margin-top: 5%;
+  border: none !important;
+}
+
+.imagem{
+  height: 75%;
+  width: 100% ;
+
+}
+
+.botpremios{
+
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+#cor{
+
+  background-color: #343a40;
+  color: #E5F7FF;
+}
+
+@media only screen and (max-width: 601px) and (orientation:portrait) {
+	.hidemobile {
+		display: none !important;
+	}
+}
